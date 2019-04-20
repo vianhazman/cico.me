@@ -1,0 +1,79 @@
+body {
+  font-family: "IBM Plex Serif", serif;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(56, 207, 191, 1) 0%,
+    rgba(10, 70, 147, 1) 90.2%
+  );
+}
+.hero {
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+small {
+  opacity: 0.6;
+}
+
+.navbar-collapse.collapse-show {
+  position: absolute;
+}
+
+.hero:hover {
+  opacity: 1;
+}
+.mainContainer {
+  height: 90vh;
+  width: 90vw;
+  padding: 2% 2% 2% 2%;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  background: white;
+  overflow: scroll;
+}
+.mainContainer:hover {
+}
+.primaryBtn {
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  opacity: 1;
+
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  opacity: 0.8;
+}
+
+.verticalCenter {
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.mainHeight {
+  min-height: 100vh;
+}
+.content {
+  min-height: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroContainer {
+    position: absolute;
+    width: 60vw;
+    opacity: 0.4;
+  }
+  .navbar {
+    position: absolute;
+    width: 85%;
+    z-index: 999;
+    background: white;
+  }
+}
