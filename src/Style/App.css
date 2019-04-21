@@ -1,10 +1,14 @@
 body {
   font-family: "IBM Plex Serif", serif;
+
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(56, 207, 191, 1) 0%,
     rgba(10, 70, 147, 1) 90.2%
   );
+}
+h2 {
+  /* font-family: "Krona One", sans-serif; */
 }
 .hero {
   width: 100%;
@@ -61,7 +65,7 @@ small {
   min-height: 100vh;
 }
 .content {
-  min-height: 90%;
+  min-height: 85%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -69,6 +73,9 @@ small {
     position: absolute;
     width: 60vw;
     opacity: 0.4;
+  }
+  .content {
+    margin-top: 15%;
   }
   .navbar {
     position: absolute;
